@@ -8,7 +8,7 @@ int main(int argc, char const *argv[])
     //Datos de entrada
 	int a = 0;
 	int b = 0;
-	//int resultado = 0;
+	
 	int suma;
 	int resta;
 	int multiplicacion;
@@ -30,10 +30,10 @@ int main(int argc, char const *argv[])
     division = a / b;
 	
 	//Salida 
-	cout << "La suma de a + b es: "<< suma << endl;;
-    cout << "La resta de a - b es: "<< resta << endl;;
-	cout << "La multiplicacion de a * b es: "<< multiplicacion << endl;;
-    cout << "La suma division de a - b es: "<< division << endl;;
+	cout << "La suma de a + b es: "<< suma << endl;
+    cout << "La resta de a - b es: "<< resta << endl;
+	cout << "La multiplicacion de a * b es: "<< multiplicacion << endl;
+    cout << "La suma division de a - b es: "<< division << endl;
 
     return 0;
 }
