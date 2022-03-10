@@ -13,21 +13,28 @@ void productos(int opcion)
     switch (opcion)
     {
     case 1:
+    
     {
         cout << "BEBIDAS CALIENTES" << endl;
-        cout << "*****************" << endl;
-        cout << "1- Capuccino" << endl;
-        cout << "2- Expresso" << endl;
+        cout << "*******" << endl;
+        cout << "1 - Capuccino" << endl;
+        cout << "2 - Expresso" << endl;
+        cout << "3 - Americano" << endl;
+        cout << endl;
 
+        cout << "Ingrese una opcion: " << endl;
         cin >> opcionProducto;
 
         switch (opcionProducto)
         {
         case 1:
-            agregarProducto("Capuccino", 1, 40);
+            agregarProducto("1 Capuccino - L 40.00", 1, 40);
             break;
         case 2:
-            agregarProducto("Expresso", 1, 30);
+            agregarProducto("1 Expresso - L 30.00", 1, 30);
+            break; 
+        case 3:
+            agregarProducto("1 Americano - L 20.00", 1, 30);
             break;  
         default:
             {
@@ -37,7 +44,7 @@ void productos(int opcion)
             }         
         }
  
-        cout << "Producto agregad";
+        cout << "Producto agregado";
         break;
 
     }
@@ -45,22 +52,74 @@ void productos(int opcion)
     case 2:
      {
        cout << "BEBIDAS FRIAS" << endl;
-       cout << "*************" << endl;
-       system("pause");
-       break;
+       cout << "*****" << endl;
+       cout << "1 - Granita de cafe" << endl;
+       cout << "2 - Malteada oreo" << endl;
+       cout << "3 - Cappuccino frio" << endl;
+       cout << endl;
+
+       cout << "Ingrese una opcion: " << endl;
+       cin >> opcionProducto;   cout << endl;
+       
+    switch (opcionProducto)
+    {
+     case 1:
+         agregarProducto("1 Granita de cafe - L 60.00", 1, 40);
+        break;
+    case 2:
+        agregarProducto("1 Malteada oreo - L 40.00", 1, 30);
+        break; 
+    case 3:
+        agregarProducto("1 Cappuccino frio - L 50.00", 1, 30);
+           break;  
+        default:
+            {
+                cout << "opcion no valida";
+                return;
+                break;
+            }         
+        }
+ 
+        cout << "Producto agregado";
+        break;
     
     }
 
     case 3:
     {
        cout << "REPOSTERIA" << endl;
-       cout << "**********" << endl;
-       system("pause");
-       break;
+       cout << "****" << endl;
+       cout << "1 - Cheesecake de fresa" << endl;
+       cout << "2 - Pie de manzana" << endl;
+       cout << "3 - Pastel tres leches" << endl;
+       cout << endl;
+
+       cout << "Ingrese una opcion: " << endl;
+       cin >> opcionProducto;   cout << endl;
     
     }
-
-    default:
+    
+    switch (opcionProducto)
+    {
+     case 1:
+         agregarProducto("1 Cheesecake de fresa - L 80.00", 1, 40);
+        break;
+    case 2:
+        agregarProducto("1 Pie de manzana - L 60.00", 1, 30);
+        break; 
+    case 3:
+        agregarProducto("1 Pastel tres leche - L 70.00", 1, 30);
+            break;  
+        default:
+            {
+                cout << "opcion no valida";
+                return;
+                break;
+            }         
+        }
+ 
+        cout << "Producto agregado";
         break;
     }
-}
+   }
+  
