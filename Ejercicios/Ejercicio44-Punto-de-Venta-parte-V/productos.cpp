@@ -110,7 +110,7 @@ void productos(int opcion)
     case 3:
         agregarProducto("1 Pastel tres leche - L 70.00", 1, 30);
             break;  
-        default:
+        default:  
             {
                 cout << "opcion no valida";
                 return;
