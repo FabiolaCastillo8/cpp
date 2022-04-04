@@ -11,7 +11,12 @@ int main(int argc, char const *argv[])
     // inicializa el numero random
     srand(time(NULL));
 
-    numero = rand() % 10 + 1;
-    
+   for (int i = 0; i < 20; i++)
+   {
+   // genera un numero entre 1 y 10
+    numero = rand() % 5 + 1;
+    cout << "Numero al azar: " << numero << endl;
+   }
+   
     return 0;
 }
