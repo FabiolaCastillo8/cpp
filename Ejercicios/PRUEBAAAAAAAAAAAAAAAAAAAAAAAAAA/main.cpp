@@ -1,9 +1,87 @@
 #include <iostream>
+#include <stdlib.h>     /* srand, rand */
+#include <time.h>       /* time */
+
 
 using namespace std;
 
-int main(int argc, char const *argv[])
+int main()
 {
+    srand(time(NULL));
+
+    int numeros [5][2];
+
+    for (int fila = 0; fila < 5; fila++)
+    {
+        for (int columna = 0; columna < 2; columna++)
+        {
+            numeros[fila][columna] = rand() % 10 + 1;
+
+            cout << numeros[fila][columna] << "";
+        }
+
+        cout << endl;
+    }
+
+return 0;
+}
+
+
+  void coutEndls(int ciclos) {
+  for (int indice = 1; indice <= ciclos; indice ++) {
+  	        cout << '*';
+	}
+}
+
+
+
+  int main () {	
+	int numeros; 
+	int arreglo;
+  int suma;
+	
+	/* inicializa el numero random */
+	srand (time(NULL));
+	
+	/* genera un numero entre 1 and 10: */
+	numeros = rand() % 5 + 1;
+	
+	do {
+		printf ("Adivina el numero (1 to 10): ");
+		cin >> miNumero;
+		
+		if (numeroSecreto < miNumero) {
+			cout << "El numero secreto es menor" << endl;
+		}
+		else {
+			if (numeroSecreto > miNumero) {
+				cout << "El numero secreto es mayor" << endl;
+			}
+		}
+	} while (numeroSecreto != miNumero);
+	
+	cout << "Felicidades, adivinaste!" << endl;
+
+	return 0;	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  ----
     int numeros[5];
     int arreglo [5][2];
     
@@ -29,6 +107,9 @@ int main(int argc, char const *argv[])
     }
      
      cout << endl;
+
+     return 0;
+}
    }
 
    //cout << "Resumen" << endl;
@@ -135,8 +216,4 @@ int main(int argc, char const *argv[])
 
  return 0;
 
-
-
-
-    return 0;
 }
