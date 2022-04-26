@@ -30,3 +30,15 @@ void mostrarClases() {
     cout << endl;
     system("pause");
 }
+
+string buscarClase(string codigo) {
+    
+    for (int i = 0; i < 10; i++)
+    {
+        if (arregloClases[i][0] == codigo) {
+        return arregloClases[i][1];
+        }
+    }
+
+    return "";
+}
