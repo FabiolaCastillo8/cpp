@@ -39,6 +39,10 @@ void menu() {
           mostrarAcumulados(); 
           break;
         }
+         case 4: {
+          reporteAcumulados(); 
+          break;
+        }
         case 5:
             salir = true;
        default:

@@ -16,7 +16,6 @@ bool login () {
             return false;
         }
         
-
         cout << "Ingrese su password: ";
         cin >> password;
 

@@ -39,6 +39,8 @@ void mostrarAcumulados() {
             }
         }
     }
+    
+    cout << endl;
 
     while(true) {
         cout << "Ingrese el codigo de la clase: ";
@@ -60,11 +62,28 @@ void mostrarAcumulados() {
             }
         }
     }
+        cout << endl;
 
-    arregloAcumulados[ultimaLinea] = codigoAlumno + " | " + nombreAlumno + " - " + codigoClase + " | " + nombreClase;
-    ultimaLinea++;
+        arregloAcumulados[ultimaLinea] = codigoAlumno + " | " + nombreAlumno + " - " + codigoClase + " | " + nombreClase;
+        ultimaLinea++;
 
+   //system("pause");
    return;
-}    
+}   
+
+void reporteAcumulados() {
+    system("cls");
+
+    cout << "Reporte de Notas Finales" << endl;
+    cout << "------------------------" << endl << endl;
+    for (int i = 0; i < ultimaLinea; i++)
+    {
+        cout << arregloAcumulados[i] << endl;
+    }
+
+    cout << endl;
+    cout << endl;
+    system("pause");
+}
 
  
