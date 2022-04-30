@@ -8,6 +8,11 @@ bool login () {
 
     while (intentos <= 3) {
         system("cls");
+     
+            cout << "---------------------------------------------------" << endl;
+            cout << "----- BIENVENIDO AL SISTEMA DE NOTAS ESCOLARES ----" << endl;
+            cout << "---------------------------------------------------" << endl;
+            cout << endl;
 
         if (intentos == 3) {
             cout << "No se ha podido validar su password, porfavor contacte al administrador del sistema"

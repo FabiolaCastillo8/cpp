@@ -42,8 +42,6 @@ void menu() {
         }
          case 4: {
           reporteAcumulados();
-          //mostrarNotas();
-          //admireporteNotas(); 
 
           break;
         }

@@ -72,7 +72,10 @@ void mostrarAcumulados() {
      
     cout << endl;
     cout << endl;
- 
+       
+        cout << "NOTAS PARCIAL ALUMNOS " << endl;
+        cout << "----------------------" << endl;
+        cout << endl;
         cout << "Ingrese la nota del primer parcial: ";
         cin >> nota1;
         cout << "Ingrese la nota del segundo parcial: ";
@@ -104,10 +107,10 @@ void mostrarAcumulados() {
 void reporteAcumulados() {
    system("cls");
 
-   cout << "Reporte de Notas Finales" << endl;
+   cout << "REPORTE DE NOTAS FINALES" << endl;
    cout << "------------------------" << endl << endl;
 
-   cout << "CodAlumno|Alumno|CodMateria|Promedio|Observacion" << endl << endl;
+   cout << "Codigo Alumno, Alumno, Codigo Materia, Promedio, Observacion" << endl << endl;
    for (int i = 0; i < ultimaLinea; i++)
    {
        cout << arregloAcumulados[i] << endl;
