@@ -3,6 +3,7 @@
 #include "clasesDisponibles.h"
 #include "acumulados.h"
 
+
 using namespace std;
 
 void menu() {
@@ -40,7 +41,10 @@ void menu() {
           break;
         }
          case 4: {
-          reporteAcumulados(); 
+          reporteAcumulados();
+          //mostrarNotas();
+          //admireporteNotas(); 
+
           break;
         }
         case 5:

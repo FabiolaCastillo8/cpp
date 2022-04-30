@@ -35,7 +35,6 @@ string buscarAlumno(string codigo) {
         if (arregloAlumnos[i][0] == codigo) {
         return arregloAlumnos[i][1];
         }
-
         
     }
 

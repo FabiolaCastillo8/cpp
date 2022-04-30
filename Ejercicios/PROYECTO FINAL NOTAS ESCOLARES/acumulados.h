@@ -1,2 +1,3 @@
+
 void mostrarAcumulados();
 void reporteAcumulados();
